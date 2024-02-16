@@ -9,7 +9,7 @@ pipeline {
             stage('Checkout Git repository') {
                 steps {
                     echo 'Pulling ';
-                    git branch: 'master', url: 'https://github.com/aymeennefzi/Gestion_Bank.git;;
+                    git branch: 'master', url: 'https://github.com/aymeennefzi/Gestion_Bank.git;
                 }
             }
                stage('Status Mysql') {
