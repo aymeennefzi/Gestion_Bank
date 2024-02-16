@@ -5,7 +5,7 @@ pipeline {
         maven 'M2_HOME'
     }
 
-    tages {
+    stages {
             stage('Checkout Git repository') {
                 steps {
                     echo 'Pulling ';
