@@ -12,13 +12,7 @@ pipeline {
                     git branch: 'master', url: 'https://github.com/aymeennefzi/Gestion_Bank.git';
                 }
             }
-               stage('Status Mysql') {
-                       steps {
-                           script {
-                               sh 'sudo systemctl start mysql'
-                           }
-                       }
-                   }
+
                    stage('Maven Clean Compile') {
                        steps {
                            sh 'mvn clean'
